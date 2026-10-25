@@ -1,0 +1,21 @@
+[project]
+name = "docket"
+version = "0.1.0"
+description = "Open-source Case AI: ask questions about your documents, get answers with citations."
+readme = "README.md"
+authors = [
+    { name = "Ikromjon Ochilov", email = "ikromjon98.98@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
